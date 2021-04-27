@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Movies rating</title>
+  <link rel="stylesheet"
+        href="https://unpkg.com/bootstrap/dist/css/bootstrap.css">
+  <style>
+    #form input:first-child{
+        width:250px;
+    }
+    .sort{
+        margin-top:2em;
+    }
+    ul{
+        margin-top:2em;
+    }
+  </style>
+</head>
+<body>
+<div>
+    <input type="text" placeholder="Name of the movie">
+    <input type="number" min="0" max="10" value="0" placeholder="0">
+    <button id="btn">Vote</button>
+</div>
+<div class="sort">
+    <button id="title">Sort by title</button>
+    <button id="rate">Sort by rate</button>
+</div>
+<ul></ul>
+</ul>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
