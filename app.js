@@ -53,7 +53,7 @@ function SortMovies(vol = ""){
     movies.forEach((movie) =>{
         const li = $('<li>');
             li.attr("data-rate", movie.rating);
-                li.attr("data-movie", movie.title[13].toLowerCase());
+                li.attr("data-movie",  movie.letter);
                     li.html(movie.title);
         ul.append(li);
     });
